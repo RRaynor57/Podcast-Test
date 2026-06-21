@@ -4,8 +4,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout podcast generator
         uses: actions/checkout@v3
+        with:
+          repository: RRaynor57/Podcast-generator
+          path: Podcast-generator
       - name: Run Feed Generator
         uses: RRaynor57/Podcast-generator@main
         
